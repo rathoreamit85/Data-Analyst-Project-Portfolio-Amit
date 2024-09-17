@@ -1,10 +1,10 @@
 # Data-Analyst-Project-Portfolio-Amit
 
-**Project 1 Descriptive Analysis**
-**Project Title: Management of External Research Funding: Data Cleansing and Structuring for Material Pending Requests**
-_Objective:_
+# Project 1 Descriptive Analysis
+# Project Title: Management of External Research Funding: Data Cleansing and Structuring for Material Pending Requests
+# Objective:
 The primary goal of this project is to cleanse, structure, and prepare a dataset related to external research funding requests in an academic setting. The project focuses on ensuring data quality and structuring it for future analyses, such as funding trend analysis based on time and departmental allocation. This project aims to improve data accuracy for operational decision-making regarding funding management.
-Dataset:
+# Dataset:
 The dataset includes operational data on material pending requests for external research funding, with the following key features:
 •	Application ID: A unique identifier for each funding request.
 •	Applicant Name: The individual or team submitting the request.
