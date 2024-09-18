@@ -70,7 +70,7 @@ This descriptive analysis project provides a structured understanding of externa
 
 ![Reference Images](https://github.com/rathoreamit85/Data-Analyst-Project-Portfolio-Amit/blob/main/DRAWIO.png)
 ![Reference Images](https://github.com/rathoreamit85/Data-Analyst-Project-Portfolio-Amit/blob/main/DRAWIO.png)
-![Reference Images](https://github.com/rathoreamit85/Data-Analyst-Project-Portfolio-Amit/blob/main/DRAWIO.png)
+![Reference Images](DRAWIO.png)
 
 # Project 2  Exploratory Data Analysis on External Research Funding Requests
 
