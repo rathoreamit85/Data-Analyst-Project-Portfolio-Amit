@@ -52,8 +52,8 @@ Year-based analysis using the newly added "Year" column to track trends in fundi
 
 ##### 6.	Recommendations:
 - Based on the findings, the following recommendations are provided:
-  	- Implement stricter application deadlines to prevent an overload of submissions near the end of the review period.
-  	- Allocate more resources to departments with a higher volume of funding requests to ensure timely review.
+  - Implement stricter application deadlines to prevent an overload of submissions near the end of the review period.
+  - Allocate more resources to departments with a higher volume of funding requests to ensure timely review.
   Improve the application process for departments with consistently rejected applications to increase success rates.
 
 ##### Tools and Technologies:
