@@ -129,3 +129,56 @@ The project helps UCW's external research funding management team streamline the
 - A final report summarizing the key insights from the EDA and suggestions for improving the management of external research funding requests.
   
 
+# Project 3: AWS Data Analytic Platform for Vancouver Voting Results
+
+## Project Title: Building an AWS ETL Pipeline for Council Voting Data
+
+### Objective:
+The goal of this project is to create an end-to-end AWS ETL pipeline to analyze council voting results for 2023 and 2024. This project focuses on creating a clean, structured dataset to calculate voting percentages and compare the results across both years, facilitating decision-making for the Vancouver City Council.
+
+### Dataset:
+Data used in this project is sourced from the Open Data Vancouver website. Key features of the dataset include:
+•	Vote Year: Year the vote took place.
+•	Vote Results: Votes in favor, opposition, and absent members.
+•	Total Votes: Total number of votes cast in each council decision.
+
+### Methodology:
+
+##### 1.	Data Storage Setup:
+- Created three folders in AWS S3:
+	- Landing Folder: Raw datasets from 2023 and 2024.
+	- Raw Folder: Data after initial cleaning.
+	- Curated Folder: Final structured dataset for analysis.
+   
+##### 2.	Data Pipeline Creation (AWS Glue):
+- Created Glue DataBrew projects to handle ETL (Extract, Transform, Load) operations.
+- Two projects were created:
+	project-counvot-2023
+	project-counvot-2024
+- Jobs were created for each year’s data to clean, transform, and load the results.
+  
+##### 3.	ETL Pipeline Design:
+- Extract: Raw datasets for 2023 and 2024 were ingested into AWS S3.
+- Transform: Applied the following transformations:
+	- Schema change to remove unnecessary columns and rename key columns.
+	- Aggregate function to group votes by year and count votes in favor, opposition, and absent members.
+	- Join datasets for 2023 and 2024 to calculate the overall percentage of votes in favor and opposition.
+	- Derived new fields to calculate voting percentages.
+- Load: Transferred the final, clean dataset to the Curated folder for analysis.
+##### 4.	Data Analysis (AWS Athena):
+	- Created tables for 2023 and 2024 data in Athena.
+	- Queried and compared voting results, calculating the percentage of votes in favor and opposition for each year.
+### Tools and Technologies:
+•	AWS Glue: For building the ETL pipeline.
+•	AWS S3: For data storage.
+•	AWS Athena: For querying and analyzing data.
+•	Python (optional): For additional transformations and analysis.
+•	Excel: For basic data visualization due to AWS student account limitations.
+### Deliverables:
+•	Cleaned and structured datasets for 2023 and 2024 voting data.
+•	A fully functional AWS Glue pipeline to handle ETL operations.
+•	A detailed report of voting percentages for both years.
+•	Visualizations generated in Excel to show the trends in council voting.
+
+This README structure will provide a clear overview of the first part of your AWS project, helping to organize and explain the process of building an ETL pipeline for the Vancouver voting data.
+
