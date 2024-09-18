@@ -78,16 +78,16 @@ The goal of this project is to analyze pending research funding requests over mu
 ### Dataset:
 This dataset is clean and structured after using Glue Dtaabrew services The dataset includes information on material pending research funding requests, with the following key columns:
 
-Application ID: Unique identifier for each funding request.
-Applicant Name: Name of the individual applying for funding.
-Department: The department responsible for the funding request.
-Submission Date: The date the application was submitted.
-Funding Amount Requested: The total amount of funding requested.
-Funding Type: Type of funding (e.g., Grant, Fellowship).
-Application Status: Current status (e.g., Pending, Approved, Rejected).
-Review Deadline: The deadline for the funding request review.
-Reviewer Assigned: Reviewer responsible for evaluating the request.
-Notes: Additional comments or context on the funding request.
+- Application ID: Unique identifier for each funding request.
+- Applicant Name: Name of the individual applying for funding.
+- Department: The department responsible for the funding request.
+- Submission Date: The date the application was submitted.
+- Funding Amount Requested: The total amount of funding requested.
+- Funding Type: Type of funding (e.g., Grant, Fellowship).
+- Application Status: Current status (e.g., Pending, Approved, Rejected).
+- Review Deadline: The deadline for the funding request review.
+- Reviewer Assigned: Reviewer responsible for evaluating the request.
+- Notes: Additional comments or context on the funding request.
 
 ### Methodology:
 #### Data Pipeline Creation (AWS Glue):
@@ -138,7 +138,7 @@ The goal of this project is to create an end-to-end AWS ETL pipeline to analyze 
 
 ### Dataset:
 Data used in this project is sourced from the Open Data Vancouver website. Key features of the dataset include:
-•	Vote Year: Year the vote took place.
+•	Vote Year: The year the vote took place.
 •	Vote Results: Votes in favor, opposition, and absent members.
 •	Total Votes: Total number of votes cast in each council decision.
 
