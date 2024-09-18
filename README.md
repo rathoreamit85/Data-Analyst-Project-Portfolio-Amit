@@ -241,4 +241,12 @@ Monitoring is critical for tracking the health and usage of datasets.
 #### Conclusion
 By implementing the above data protection, governance, and monitoring processes, the datasets used in this project are secured and managed effectively. The monitoring setup ensures proactive tracking of usage and potential issues, while backup and governance workflows guarantee the data remains available and trusted.
 
+#### Screenshots for Project 4 for Reference of work done:
+![Weekly scheduling for workflow firing](Weekly scheduling for workflow firing.png)
+![Rule Creation for Backup automation under management tab for bucket in S3](Rule Creation for Backup automation.png)
+![Key Created using KMS](KMS Key Created.png)
+![Encrypting Bucket with Key](Encrypting Bucket with Key.png)
+![Dashboard Created for Cost Estimation](Dashboard Created for Cost Estimation.png)
+![Data Quality Data Protection Pipeline](DQDP Pipeline.png)
+![Alarm Creation to schedule](Alarm Creation to schedule.png)
 
