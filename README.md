@@ -18,53 +18,53 @@ The dataset includes operational data on material pending requests for external 
 - Notes: Any additional remarks or comments related to the request.
 #### Methodology:
 ##### 1.	Data Collection and Preparation:
-	- The raw dataset is stored in the "landing" folder in an AWS S3 bucket.
-	- AWS Glue DataBrew is used for data cleansing, which includes handling missing values, checking for incorrect data types, and removing null entries from critical columns.
+- The raw dataset is stored in the "landing" folder in an AWS S3 bucket.
+- AWS Glue DataBrew is used for data cleansing, which includes handling missing values, checking for incorrect data types, and removing null entries from critical columns.
 
 ##### 2.	Data Cleaning and Structuring:
 - Clean the dataset by identifying and addressing:
-	- Missing or null values in key fields (e.g., "Application ID", "Funding Amount").
-  	- Inconsistencies in the formatting of date fields such as "Submission Date" and "Review Deadline".
-  	- Addition of a "Year" column based on the "Submission Date" to enable year-wise data analysis.
+- Missing or null values in key fields (e.g., "Application ID", "Funding Amount").
+- Inconsistencies in the formatting of date fields such as "Submission Date" and "Review Deadline".
+- Addition of a "Year" column based on the "Submission Date" to enable year-wise data analysis.
 - After the data cleansing, the structured dataset is stored in the "raw" folder in S3 for further analysis and reporting.
 
 ##### 3.	Descriptive Statistics:
 - Calculate summary statistics for key variables, including:
-	- Total number of applications submitted.
-	- Average funding amount requested per application.
-  	- Distribution of applications by department and funding type.
-	- Status of applications (e.g., percentage of pending, approved, and rejected applications).
+- Total number of applications submitted.
+- Average funding amount requested per application.
+- Distribution of applications by department and funding type.
+- Status of applications (e.g., percentage of pending, approved, and rejected applications).
 Year-based analysis using the newly added "Year" column to track trends in funding requests over time.
 
 ##### 4.	Data Visualization:
 - Create visual representations to present findings:
-	- Bar charts showing the distribution of applications by department.
-  	- Pie charts depicting the status of applications (pending, approved, rejected).
-  	- Line charts displaying the number of funding requests submitted over time, broken down by year.
+- Bar charts showing the distribution of applications by department.
+- Pie charts depicting the status of applications (pending, approved, rejected).
+- Line charts displaying the number of funding requests submitted over time, broken down by year.
   Graphs showing the trends in requested funding amounts across departments.
 
 ##### 5.	Insights and Findings:
 - Key insights derived from the analysis include:
-	- Peak submission periods for funding requests (e.g., end of academic terms or grant deadlines).
-  	- Departments requesting the highest and lowest funding.
-  	- Common application statuses and trends over the past few years.
+- Peak submission periods for funding requests (e.g., end of academic terms or grant deadlines).
+- Departments requesting the highest and lowest funding.
+- Common application statuses and trends over the past few years.
   The typical funding amounts requested by various departments and funding types.
 
 ##### 6.	Recommendations:
 - Based on the findings, the following recommendations are provided:
-  - Implement stricter application deadlines to prevent an overload of submissions near the end of the review period.
-  - Allocate more resources to departments with a higher volume of funding requests to ensure timely review.
+- Implement stricter application deadlines to prevent an overload of submissions near the end of the review period.
+- Allocate more resources to departments with a higher volume of funding requests to ensure timely review.
   Improve the application process for departments with consistently rejected applications to increase success rates.
 
 ##### Tools and Technologies:
-	- AWS S3 for data storage.
-	- AWS Glue DataBrew for data cleansing and transformation.
-	- Excel for calculating descriptive statistics and creating visualizations.
+- AWS S3 for data storage.
+- AWS Glue DataBrew for data cleansing and transformation.
+- Excel for calculating descriptive statistics and creating visualizations.
 
 ##### Deliverables:
-	- A detailed report summarizing the data preparation, findings, and recommendations for improving research funding management.
-	- Visualizations and dashboards displaying key trends and insights.
-	- A presentation for stakeholders, highlighting the primary outcomes and actionable insights for process optimization.
+- A detailed report summarizing the data preparation, findings, and recommendations for improving research funding management.
+- Visualizations and dashboards displaying key trends and insights.
+- A presentation for stakeholders, highlighting the primary outcomes and actionable insights for process optimization.
 
 This descriptive analysis project provides a structured understanding of external research funding requests, enabling the academic institution to optimize its funding allocation processes and improve overall efficiency.
 
@@ -93,15 +93,15 @@ This dataset is clean and structured after using Glue Dtaabrew services The data
 
 ### Methodology:
 #### Data Pipeline Creation (AWS Glue):
-	- Here we get a curated dataset which is required for analysis in our case only two columns year and Percentage of pending applications. 
-	- Data Collection: Load the raw dataset containing material pending requests from the UCW data storage.
-	- Data Cleaning: Use schema changes to modify column types, drop unnecessary columns, and rename them for consistency.
-	- Feature Engineering: Apply aggregation functions to calculate the percentage of material pending requests per year.
-	- Joining Datasets: Perform joins between multiple datasets to combine related information on funding requests, such as applicant demographics and departmental details.
+- Here we get a curated dataset which is required for analysis in our case only two columns year and Percentage of pending applications. 
+- Data Collection: Load the raw dataset containing material pending requests from the UCW data storage.
+- Data Cleaning: Use schema changes to modify column types, drop unnecessary columns, and rename them for consistency.
+- Feature Engineering: Apply aggregation functions to calculate the percentage of material pending requests per year.
+- Joining Datasets: Perform joins between multiple datasets to combine related information on funding requests, such as applicant demographics and departmental details.
 - Data Aggregation and Schema Transformation:
-	- Column Management: Use AWS Glue’s schema features to drop irrelevant columns (e.g., "Notes") and restructure the data for consistency.
-	- Aggregate Calculations: Calculate the percentage of records submitted each year based on the Submission Date field.
- 	- Use an aggregation function to count the number of requests per year and compute the percentage share of the total.
+- Column Management: Use AWS Glue’s schema features to drop irrelevant columns (e.g., "Notes") and restructure the data for consistency.
+- Aggregate Calculations: Calculate the percentage of records submitted each year based on the Submission Date field.
+- Use an aggregation function to count the number of requests per year and compute the percentage share of the total.
 
 #### Exploratory Data Analysis (AWS Athena):
 - Query the dataset using Athena to generate yearly statistics.
@@ -111,10 +111,10 @@ This dataset is clean and structured after using Glue Dtaabrew services The data
 #### Data Joins and Analysis:
 - Join datasets to enrich analysis, combining research funding requests with additional data like departmental budget allocations or previous funding success rates.
 - Results Publishing:
-	- The results, including trends in submission rates and funding allocations, are published on both local and web servers for easy access by stakeholders.
+- The results, including trends in submission rates and funding allocations, are published on both local and web servers for easy access by stakeholders.
 - Insights and Findings:
-	- Key insights will include the percentage of pending requests each year, trends in funding requests by department, and the impact of funding types on request approval rates.
-	- Identification of departments with the highest volume of pending requests, enabling more efficient allocation of resources for review.
+- Key insights will include the percentage of pending requests each year, trends in funding requests by department, and the impact of funding types on request approval rates.
+- Identification of departments with the highest volume of pending requests, enabling more efficient allocation of resources for review.
 
 #### Conclusion:
 The project helps UCW's external research funding management team streamline the request review process by identifying high-priority areas and optimizing the review workload. Further analysis can focus on improving approval times or predicting the likelihood of request approval.
@@ -140,42 +140,44 @@ The goal of this project is to create an end-to-end AWS ETL pipeline to analyze 
 
 ### Dataset:
 Data used in this project is sourced from the Open Data Vancouver website. Key features of the dataset include:
-•	Vote Year: The year the vote took place.
-•	Vote Results: Votes in favor, opposition, and absent members.
-•	Total Votes: Total number of votes cast in each council decision.
+- Vote Year: The year the vote took place.
+- Vote Results: Votes in favor, opposition, and absent members.
+- Total Votes: Total number of votes cast in each council decision.
 
 ### Methodology:
 
 ##### 1.	Data Storage Setup:
 - Created three folders in AWS S3:
-	- Landing Folder: Raw datasets from 2023 and 2024.
-	- Raw Folder: Data after initial cleaning.
-	- Curated Folder: Final structured dataset for analysis.
-   
+- Landing Folder: Raw datasets from 2023 and 2024.
+- Raw Folder: Data after initial cleaning.
+- Curated Folder: Final structured dataset for analysis.
+
 ##### 2.	Data Pipeline Creation (AWS Glue):
 - Created Glue DataBrew projects to handle ETL (Extract, Transform, Load) operations.
 - Two projects were created:
-	project-counvot-2023
-	project-counvot-2024
+- project-counvot-2023
+- project-counvot-2024
 - Jobs were created for each year’s data to clean, transform, and load the results.
   
 ##### 3.	ETL Pipeline Design:
 - Extract: Raw datasets for 2023 and 2024 were ingested into AWS S3.
 - Transform: Applied the following transformations:
-	- Schema change to remove unnecessary columns and rename key columns.
-	- Aggregate function to group votes by year and count votes in favor, opposition, and absent members.
-	- Join datasets for 2023 and 2024 to calculate the overall percentage of votes in favor and opposition.
-	- Derived new fields to calculate voting percentages.
+- Schema change to remove unnecessary columns and rename key columns.
+- Aggregate function to group votes by year and count votes in favor, opposition, and absent members.
+- Join datasets for 2023 and 2024 to calculate the overall percentage of votes in favor and opposition.
+- Derived new fields to calculate voting percentages.
 - Load: Transferred the final, clean dataset to the Curated folder for analysis.
+
 ##### 4.	Data Analysis (AWS Athena):
-	- Created tables for 2023 and 2024 data in Athena.
-	- Queried and compared voting results, calculating the percentage of votes in favor and opposition for each year.
+- Created tables for 2023 and 2024 data in Athena.
+- Queried and compared voting results, calculating the percentage of votes in favor and opposition for each year.
+
 ### Tools and Technologies:
-•	AWS Glue: For building the ETL pipeline.
-•	AWS S3: For data storage.
-•	AWS Athena: For querying and analyzing data.
-•	Python (optional): For additional transformations and analysis.
-•	Excel: For basic data visualization due to AWS student account limitations.
+- AWS Glue: For building the ETL pipeline.
+- AWS S3: For data storage.
+- AWS Athena: For querying and analyzing data.
+- Excel: For basic data visualization due to AWS student account limitations.
+
 ### Deliverables:
 •	Cleaned and structured datasets for 2023 and 2024 voting data.
 •	A fully functional AWS Glue pipeline to handle ETL operations.
