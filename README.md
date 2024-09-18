@@ -60,4 +60,4 @@ Year-based analysis using the newly added "Year" column to track trends in fundi
 	- A presentation for stakeholders, highlighting the primary outcomes and actionable insights for process optimization.
 This descriptive analysis project provides a structured understanding of external research funding requests, enabling the academic institution to optimize its funding allocation processes and improve overall efficiency.
 
-![Reference Images] (/screenshots/DRAWIO.png)
+
