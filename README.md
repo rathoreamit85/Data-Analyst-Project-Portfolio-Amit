@@ -184,6 +184,51 @@ Data used in this project is sourced from the Open Data Vancouver website. Key f
 •	A detailed report of voting percentages for both years.
 •	Visualizations generated in Excel to show the trends in council voting.
 
-This README structure will provide a clear overview of the first part of your AWS project, helping to organize and explain the process of building an ETL pipeline for the Vancouver voting data.
+This Project structure will provide a clear overview of the first part of your AWS project, helping to organize and explain the process of building an ETL pipeline for the Vancouver voting data.
+
+#Project 4 
+
+## Project Title: Data Protection, Governance, and Monitoring for AWS-Based Council Voting Analytics
+
+#### Introduction
+This project aims to ensure data protection, governance, and monitoring of datasets used for analyzing voting results of the City of Vancouver for the years 2023 and 2024. These datasets have been ingested and processed using various AWS services (S3, Glue, Athena) in the first part of the project.
+
+#### Dataset Overview
+•	Project 1 Dataset: Vancouver City Council Voting Results for 2023 and 2024.
+•	Purpose: Analyze voting percentages in favor or opposition over both years for decision-making support.
+•	Data Size: 200 records for both years.
+
+#### Data Protection
+Data protection involves securing sensitive information and ensuring its availability and confidentiality.
+-	KMS (Key Management Service):
+-	Create and assign an encryption key to the S3 bucket holding the dataset.
+-	Key Name: project-counvot-key-amit.
+-	This encryption ensures that only authorized users can access the dataset.
+-	Backup Strategy:
+-	Backup the S3 bucket containing the dataset to another S3 bucket.
+-	Enable versioning in the S3 bucket to keep track of changes, ensuring the ability to restore previous versions in case of data loss.
+-	Replication:
+-	Set up replication from the main S3 bucket to the backup bucket to ensure data redundancy.
+
+#### Data Governance
+Governance ensures data integrity, accountability, and management across its lifecycle.
+-	Creating a Trusted Folder:
+-	Establish a separate, controlled folder for critical datasets with specific access policies to ensure only authorized users can modify or access the data.
+-	Workflow: Automate governance processes by setting up a schedule to move and process data periodically.
+-	Workflow Name: project-group5-workflow-amit.
+-	Trigger: Runs every Sunday at 23:59 to ensure data is processed and governed regularly.
+
+#### Data Monitoring
+Monitoring is critical for tracking the health and usage of datasets.
+-	CloudWatch:
+-	Create a CloudWatch dashboard to monitor S3 usage and billing.
+-	Dashboard Name: project-group5-dashboard-amit.
+-	Include widgets that display the estimated billing and storage usage of the S3 buckets.
+- Alerting: Create an alarm to notify if costs exceed a defined threshold (e.g., $38).
+- Automation & Alerts:
+- Set up CloudFormation scripts to automate resource provisioning and CloudWatch alerts. This will minimize manual interventions and enhance data protection efforts.
+
+#### Conclusion
+By implementing the above data protection, governance, and monitoring processes, the datasets used in this project are secured and managed effectively. The monitoring setup ensures proactive tracking of usage and potential issues, while backup and governance workflows guarantee the data remains available and trusted.
 
 
