@@ -203,6 +203,9 @@ Data used in this project is sourced from the Open Data Vancouver website. Key f
 This Project structure will provide a clear overview of the first part of your AWS project, helping to organize and explain the process of building an ETL pipeline for the Vancouver voting data.
 
 #### Screenshots for Third Project Refernce:
+
+- Draw IO DAP for Project 3
+![Draw IO DAP for Project 3](Draw IO DAP for Project 3.png)
 - Description Of dataset
 ![Description Of dataset](Description Of dataset.png)
 - Dataset Exported for 2024 and 2023
@@ -275,6 +278,8 @@ By implementing the above data protection, governance, and monitoring processes,
 
 #### Screenshots for Project 4 for Reference of work done:
 
+- Draw IO for Project 4
+![Draw IO for Project 4.png](Draw IO for Project 4.png)
 - Key Created using KMS
 ![Key Created using KMS](KMS Key Created.png)
 - Encrypting Bucket with Key
