@@ -68,9 +68,12 @@ Year-based analysis using the newly added "Year" column to track trends in fundi
 
 This descriptive analysis project provides a structured understanding of external research funding requests, enabling the academic institution to optimize its funding allocation processes and improve overall efficiency.
 
-![Reference Images1](https://github.com/rathoreamit85/Data-Analyst-Project-Portfolio-Amit/blob/main/DRAWIO.png)
-![Reference Images2](https://github.com/rathoreamit85/Data-Analyst-Project-Portfolio-Amit/blob/main/DRAWIO.png)
-![Reference Images3](DRAWIO.png)
+# Screenshots for Refernce:
+![Draw IO Chart for AWS services used for this project](DRAWIO.png)
+
+![Goal to achieve and the results to achieve](Goal and Results required.png)
+
+![Data cleaning and Structuring using AWS Glue Data Brew](Cleaning and Structuring.png)
 
 # Project 2  Exploratory Data Analysis on External Research Funding Requests
 
