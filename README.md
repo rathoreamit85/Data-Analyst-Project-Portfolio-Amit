@@ -68,7 +68,7 @@ Year-based analysis using the newly added "Year" column to track trends in fundi
 
 This descriptive analysis project provides a structured understanding of external research funding requests, enabling the academic institution to optimize its funding allocation processes and improve overall efficiency.
 
-![Reference Images](https://github.com/rathoreamit85/Data-Analyst-Project-Portfolio-Amit/blob/main/DRAWIO.png)
+![Reference Images](DRAWIO.png)
 
 # Project 2  Exploratory Data Analysis on External Research Funding Requests
 
