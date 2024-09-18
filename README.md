@@ -68,7 +68,7 @@ Year-based analysis using the newly added "Year" column to track trends in fundi
 
 This descriptive analysis project provides a structured understanding of external research funding requests, enabling the academic institution to optimize its funding allocation processes and improve overall efficiency.
 
-# Screenshots for Refernce:
+#### Screenshots for Refernce:
 ![Draw IO Chart for AWS services used for this project](DRAWIO.png)
 
 ![Goal to achieve and the results to achieve](Goal and Results required.png)
@@ -134,6 +134,11 @@ The project helps UCW's external research funding management team streamline the
 - A well-documented Jupyter Notebook covering the entire data pipeline, cleaning, analysis, and visualization process.
 - Cleaned and structured datasets, including the percentage of pending records per year.
 - A final report summarizing the key insights from the EDA and suggestions for improving the management of external research funding requests.
+
+#### Screenshot for reference related to Project 2:
+![AWS Pipeline creation using AWS Glue](AWS Glue Pipeline.png)
+
+![Draw IO flow chart explains the steps performed in pipeline to achieve specific results step by step](Draw IO Pipeline result structure design.png)
   
 
 # Project 3: AWS Data Analytic Platform for Vancouver Voting Results
