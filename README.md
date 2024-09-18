@@ -69,10 +69,13 @@ Year-based analysis using the newly added "Year" column to track trends in fundi
 This descriptive analysis project provides a structured understanding of external research funding requests, enabling the academic institution to optimize its funding allocation processes and improve overall efficiency.
 
 #### Screenshots for Refernce:
-![Draw IO Chart for AWS services used for this project](DRAWIO.png)
-
+- Goal to achieve and the results to achieve
 ![Goal to achieve and the results to achieve](Goal and Results required.png)
 
+- Draw IO Chart for AWS services used for this project
+![Draw IO Chart for AWS services used for this project](DRAWIO.png)
+
+- Data cleaning and Structuring using AWS Glue Data Brew
 ![Data cleaning and Structuring using AWS Glue Data Brew](Cleaning and Structuring.png)
 
 # Project 2  Exploratory Data Analysis on External Research Funding Requests
@@ -136,9 +139,12 @@ The project helps UCW's external research funding management team streamline the
 - A final report summarizing the key insights from the EDA and suggestions for improving the management of external research funding requests.
 
 #### Screenshot for reference related to Project 2:
-![AWS Pipeline creation using AWS Glue](AWS Glue Pipeline.png)
 
+- Draw IO flow chart explains the steps performed in pipeline to achieve specific results step by step
 ![Draw IO flow chart explains the steps performed in pipeline to achieve specific results step by step](Draw IO Pipeline result structure design.png)
+
+- AWS Pipeline creation using AWS Glue and store results in Curated Folder
+![AWS Pipeline creation using AWS Glue](AWS Glue Pipeline.png)
   
 
 # Project 3: AWS Data Analytic Platform for Vancouver Voting Results
@@ -196,6 +202,32 @@ Data used in this project is sourced from the Open Data Vancouver website. Key f
 
 This Project structure will provide a clear overview of the first part of your AWS project, helping to organize and explain the process of building an ETL pipeline for the Vancouver voting data.
 
+#### Screenshots for Third Project Refernce:
+- Description Of dataset
+![Description Of dataset](Description Of dataset.png)
+- Dataset Exported for 2024 and 2023
+![Dataset Exported for 2024 and 2023](Dataset Exported for 2024 and 2023.png)
+- Folder Creation in S3
+![Folder Creation in S3](Folder Creation in S3.png)
+- Landing Dataset
+![Landing Dataset](Landing Dataset.png)
+- Cleaning from AWS Data Brew Service
+![Cleaning from AWS Data Brew Service](Cleaning.png)
+- Structuring from AWS Data Brew Service
+![Structuring from AWS Data Brew Service](Structuring.png)
+- Pipeline steps to reach the required dataset to analyze
+![Pipeline steps to reach required dataset to analyze](Pipeline steps to reach required dataset to analyze.png)
+- Run Pipeline job to store dataset in Curated Folder
+![Run Pipeline job to store dataset in Curated Folder](Run Pipeline job to store dataset in Curated Folder.png)
+- Created Tables  to analyze datasets from
+![Created Tables  to analyze dataset from](Created Tables to analyze dataset from.png)
+- Athena Analysis Script and Results
+![Athena Analysis Script and Results](Athena Analysis Script and Results.png)
+- Excel Chart Analysis
+![Excel Chart Analysis](Excel Chart Analysis.png)
+- WEB Publishing Analyzed Results
+![WEB Publishing Analyzed Results](WEB Publishing Analyzed Results.png)
+
 # Project 4: Data Protection, Governance, and Monitoring
 
 ## Project Title: Data Protection, Governance, and Monitoring for AWS-Based Council Voting Analytics
@@ -242,11 +274,18 @@ Monitoring is critical for tracking the health and usage of datasets.
 By implementing the above data protection, governance, and monitoring processes, the datasets used in this project are secured and managed effectively. The monitoring setup ensures proactive tracking of usage and potential issues, while backup and governance workflows guarantee the data remains available and trusted.
 
 #### Screenshots for Project 4 for Reference of work done:
-![Weekly scheduling for workflow firing](Weekly scheduling for workflow firing.png)
-![Rule Creation for Backup automation under management tab for bucket in S3](Rule Creation for Backup automation.png)
-![Key Created using KMS](KMS Key Created.png)
-![Encrypting Bucket with Key](Encrypting Bucket with Key.png)
-![Dashboard Created for Cost Estimation](Dashboard Created for Cost Estimation.png)
-![Data Quality Data Protection Pipeline](DQDP Pipeline.png)
-![Alarm Creation to schedule](Alarm Creation to schedule.png)
 
+- Key Created using KMS
+![Key Created using KMS](KMS Key Created.png)
+- Encrypting Bucket with Key
+![Encrypting Bucket with Key](Encrypting Bucket with Key.png)
+- Rule Creation for Backup automation under the management tab for a bucket in S3
+![Rule Creation for Backup automation under management tab for bucket in S3](Rule Creation for Backup automation.png)
+- Data Quality Data Protection Pipeline
+![Data Quality Data Protection Pipeline](DQDP Pipeline.png)
+- Dashboard Created for Cost Estimation
+![Dashboard Created for Cost Estimation](Dashboard Created for Cost Estimation.png)
+- Alarm Creation to schedule
+![Alarm Creation to schedule](Alarm Creation to schedule.png)
+- Weekly scheduling for workflow firing
+![Weekly scheduling for workflow firing](Weekly scheduling for workflow firing.png)
