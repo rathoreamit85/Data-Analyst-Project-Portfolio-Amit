@@ -140,6 +140,9 @@ The project helps UCW's external research funding management team streamline the
 
 #### Screenshot for reference related to Project 2:
 
+- Draw IO for Project 2
+![Draw IO for Project 2](Draw IO for Project 2.png)
+
 - Draw IO flow chart explains the steps performed in pipeline to achieve specific results step by step
 ![Draw IO flow chart explains the steps performed in pipeline to achieve specific results step by step](Draw IO Pipeline result structure design.png)
 
