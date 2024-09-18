@@ -68,7 +68,7 @@ Year-based analysis using the newly added "Year" column to track trends in fundi
 
 This descriptive analysis project provides a structured understanding of external research funding requests, enabling the academic institution to optimize its funding allocation processes and improve overall efficiency.
 
-![Reference Images] (https://github.com/rathoreamit85/Data-Analyst-Project-Portfolio-Amit/blob/main/DRAWIO.png)
+![Reference Images](https://github.com/rathoreamit85/Data-Analyst-Project-Portfolio-Amit/blob/main/DRAWIO.png)
 
 # Project 2  Exploratory Data Analysis on External Research Funding Requests
 
@@ -185,4 +185,5 @@ Data used in this project is sourced from the Open Data Vancouver website. Key f
 •	Visualizations generated in Excel to show the trends in council voting.
 
 This README structure will provide a clear overview of the first part of your AWS project, helping to organize and explain the process of building an ETL pipeline for the Vancouver voting data.
+
 
