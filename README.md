@@ -188,7 +188,7 @@ Data used in this project is sourced from the Open Data Vancouver website. Key f
 
 This Project structure will provide a clear overview of the first part of your AWS project, helping to organize and explain the process of building an ETL pipeline for the Vancouver voting data.
 
-#Project 4 
+# Project 4: Data Protection, Governance, and Monitoring
 
 ## Project Title: Data Protection, Governance, and Monitoring for AWS-Based Council Voting Analytics
 
