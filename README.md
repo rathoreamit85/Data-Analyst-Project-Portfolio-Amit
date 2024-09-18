@@ -60,4 +60,62 @@ Year-based analysis using the newly added "Year" column to track trends in fundi
 	- A presentation for stakeholders, highlighting the primary outcomes and actionable insights for process optimization.
 This descriptive analysis project provides a structured understanding of external research funding requests, enabling the academic institution to optimize its funding allocation processes and improve overall efficiency.
 
+# Project 2  Exploratory Data Analysis on External Research Funding Requests
+## Project Title: Managing External Research Funding: An Exploratory Data Analysis on Material Pending Requests
+### Objective:
+The goal of this project is to analyze pending research funding requests over multiple years at University Canada West (UCW). By exploring key features from the dataset such as application status, funding amount, and submission deadlines, we aim to provide insights that will streamline the external research funding management process.
+
+### Dataset:
+This dataset is clean and structured after using Glue Dtaabrew services The dataset includes information on material pending research funding requests, with the following key columns:
+
+Application ID: Unique identifier for each funding request.
+Applicant Name: Name of the individual applying for funding.
+Department: The department responsible for the funding request.
+Submission Date: The date the application was submitted.
+Funding Amount Requested: The total amount of funding requested.
+Funding Type: Type of funding (e.g., Grant, Fellowship).
+Application Status: Current status (e.g., Pending, Approved, Rejected).
+Review Deadline: The deadline for the funding request review.
+Reviewer Assigned: Reviewer responsible for evaluating the request.
+Notes: Additional comments or context on the funding request.
+
+### Methodology:
+#### Data Pipeline Creation (AWS Glue):
+	- Here we get a curated dataset which is required for analysis in our case only two columns year and Percentage of pending applications. 
+	- Data Collection: Load the raw dataset containing material pending requests from the UCW data storage.
+	- Data Cleaning: Use schema changes to modify column types, drop unnecessary columns, and rename them for consistency.
+	- Feature Engineering: Apply aggregation functions to calculate the percentage of material pending requests per year.
+	- Joining Datasets: Perform joins between multiple datasets to combine related information on funding requests, such as applicant demographics and departmental details.
+- Data Aggregation and Schema Transformation:
+	- Column Management: Use AWS Glue’s schema features to drop irrelevant columns (e.g., "Notes") and restructure the data for consistency.
+	- Aggregate Calculations: Calculate the percentage of records submitted each year based on the Submission Date field.
+ 	- Use an aggregation function to count the number of requests per year and compute the percentage share of the total.
+
+#### Exploratory Data Analysis (AWS Athena):
+- Query the dataset using Athena to generate yearly statistics.
+- Perform calculations to find the proportion of applications submitted each year.
+- Analyze trends in funding requests, including changes in funding types or amounts requested over time.
+
+#### Data Joins and Analysis:
+- Join datasets to enrich analysis, combining research funding requests with additional data like departmental budget allocations or previous funding success rates.
+- Results Publishing:
+	- The results, including trends in submission rates and funding allocations, are published on both local and web servers for easy access by stakeholders.
+- Insights and Findings:
+	- Key insights will include the percentage of pending requests each year, trends in funding requests by department, and the impact of funding types on request approval rates.
+	- Identification of departments with the highest volume of pending requests, enabling more efficient allocation of resources for review.
+
+#### Conclusion:
+The project helps UCW's external research funding management team streamline the request review process by identifying high-priority areas and optimizing the review workload. Further analysis can focus on improving approval times or predicting the likelihood of request approval.
+
+#### Tools and Technologies:
+- AWS Glue: For managing ETL (Extract, Transform, Load) processes, schema changes, and data transformations.
+- AWS Athena: To run SQL queries and perform percentage calculations and aggregations.
+- Excel: For additional data manipulation and analysis.
+- Web Servers: For publishing the results of the analysis for access by UCW stakeholders.
+
+#### Deliverables:
+- A well-documented Jupyter Notebook covering the entire data pipeline, cleaning, analysis, and visualization process.
+- Cleaned and structured datasets, including the percentage of pending records per year.
+- A final report summarizing the key insights from the EDA and suggestions for improving the management of external research funding requests.
+  
 
