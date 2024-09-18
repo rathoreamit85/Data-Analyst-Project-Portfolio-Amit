@@ -71,7 +71,9 @@ This descriptive analysis project provides a structured understanding of externa
 # Screenshots for Refernce:
 ![Draw IO Chart for AWS services used for this project](DRAWIO.png)
 
-![Goal to achieve and the results to achieve](Goal and Results required.png)
+![Goal to achieve and the results to achieve](https://github.com/rathoreamit85/Data-Analyst-Project-Portfolio-Amit/blob/main/Goal%20and%20Results%20required.png)
+
+(Goal and Results required.png)
 
 ![Data cleaning and Structuring using AWS Glue Data Brew](Cleaning and Structuring.png)
 
